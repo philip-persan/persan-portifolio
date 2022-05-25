@@ -11,10 +11,10 @@
         @apply w-full h-full flex flex-col items-center justify-evenly bg-secondary;
     }
     aside > .title > h1 {
-        @apply text-EEE text-3xl font-semibold tracking-wide underline decoration-orangeC;
+        @apply text-EEE sm:text-3xl font-semibold tracking-wide underline decoration-orangeC;
     }
     aside > .title > h2 {
-        @apply text-orangeC italic text-lg font-semibold;
+        @apply text-orangeC italic sm:text-lg font-semibold;
     }
     main {
         @apply w-full h-full flex items-center justify-evenly;
@@ -35,18 +35,18 @@
 
 @layer components {
     .title {
-        @apply flex flex-col items-center;
+        @apply flex flex-col items-center text-center md:text-center;
     }
     #perfil {
-        @apply w-52 rounded-full border-2 border-EEE;
+        @apply w-52 hidden md:flex rounded-full border-2 border-EEE;
     }
     .links {
         @apply flex flex-col items-start justify-center gap-5 text-EEE text-2xl;
     }
-    .links > a {
-        @apply hover:text-orangeC hover:underline hover:decoration-primary;
+    .links > .link-group > a {
+        @apply hover:text-orangeC hover:underline hover:decoration-primary hidden sm:inline-block;
     }
-    .links > a > i {
+    .links > .link-group > i {
         @apply mr-2 text-orangeC;
     }
     .social {
