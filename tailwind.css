@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-primary;
+    }
+    aside {
+        @apply w-full h-full flex flex-col items-center justify-evenly bg-secondary;
+    }
+    aside > .title > h1 {
+        @apply text-EEE text-3xl font-semibold tracking-wide underline decoration-orangeC;
+    }
+    aside > .title > h2 {
+        @apply text-orangeC italic text-lg font-semibold;
+    }
+    main {
+        @apply w-full h-full flex items-center justify-evenly;
+    }
+    main > article {
+        @apply prose lg:prose-lg p-5;
+    }
+    main > article > h1 {
+        @apply text-EEE underline decoration-orangeC;
+    }
+    main > article > p {
+        @apply text-EEE;
+    }
+    main > img {
+        @apply w-2/5 rounded;
+    }
+}
+
+@layer components {
+    .title {
+        @apply flex flex-col items-center;
+    }
+    #perfil {
+        @apply w-52 rounded-full border-2 border-EEE;
+    }
+    .links {
+        @apply flex flex-col items-start justify-center gap-5 text-EEE text-2xl;
+    }
+    .links > a {
+        @apply hover:text-orangeC hover:underline hover:decoration-primary;
+    }
+    .links > a > i {
+        @apply mr-2 text-orangeC;
+    }
+    .social {
+        @apply flex items-center justify-center gap-5 text-EEE text-2xl;
+    }
+    .social > a > i {
+        @apply hover:text-orangeC cursor-pointer;
+    }
+    #btn {
+        @apply p-4 my-2 italic no-underline text-EEE bg-orangeC rounded-tl rounded-br;
+    }
+    .img_container {
+        @apply flex gap-4;
+    }
+    .modes {
+        @apply flex flex-col gap-2 text-xl text-EEE;
+    }
+}
+
+body {
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
