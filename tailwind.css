@@ -25,7 +25,22 @@
     main > article > h1 {
         @apply text-EEE underline decoration-orangeC;
     }
+    main > article > h3 {
+        @apply text-EEE;
+    }
     main > article > p {
+        @apply text-EEE;
+    }
+    main > #about > article {
+        @apply prose lg:prose-lg p-5;
+    }
+    main > #about > article > h1 {
+        @apply text-EEE underline decoration-orangeC;
+    }
+    main > #about > article > h3 {
+        @apply text-EEE;
+    }
+    main > #about > article > p {
         @apply text-EEE;
     }
     main > img {
@@ -63,6 +78,54 @@
     }
     .modes {
         @apply flex flex-col gap-2 text-xl text-EEE;
+    }
+    #about {
+        @apply w-full h-full p-5 flex flex-col gap-10;
+    }
+    .info {
+        @apply w-1/2 h-52 p-5 bg-secondary rounded flex flex-col flex-wrap;
+    }
+    .info-group {
+        @apply m-2 flex items-center gap-2;
+    }
+    .info-group > h1 {
+        @apply font-bold text-orangeC;
+    }
+    .info-group > p {
+        @apply text-EEE;
+    }
+    .card-info {
+        @apply flex items-center justify-self-start gap-5;
+    }
+    .ex-edu {
+        @apply flex gap-5;
+    }
+    .experience {
+        @apply w-1/2 h-52 p-5 bg-secondary rounded;
+    }
+    .experience > .header {
+        @apply font-bold text-center text-xl text-EEE uppercase underline decoration-orangeC tracking-wider;
+    }
+    .education {
+        @apply w-1/2 p-5 bg-secondary rounded flex flex-col items-start gap-3;
+    }
+    .education > h1 {
+        @apply font-bold text-EEE;
+    }
+    .list > h1 {
+        @apply font-semibold text-lg underline decoration-orangeC underline-offset-2;
+    }
+    .list > li {
+        @apply flex gap-2 text-EEE;
+    }
+    .list > li > p {
+        @apply text-orangeC;
+    }
+    .past-experiences {
+        @apply w-1/2 h-52 p-5 bg-secondary rounded;
+    }
+    .past-experiences > h1 {
+        @apply font-bold text-EEE;
     }
 }
 
