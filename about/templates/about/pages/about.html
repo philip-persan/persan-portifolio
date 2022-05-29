@@ -1,0 +1,128 @@
+{% extends 'global/base.html' %}
+{% load static %}
+{% block title %}About Me{% endblock title %}
+{% block conteudo %}
+<section id="about">
+    <article class="prose prose-xl">
+        <h1 class="">About Me</h1>
+        <h3>I'm {{request.user.first_name}} {{request.user.last_name}} and {{request.user.profession}}</h3>
+        <p>
+            Here you gonna learn more about me!
+        </p>
+    </article>
+    <div class="card-info">
+        <div class="info">
+            <div class="info-group">
+                <h1 class="font-semibold">Birthday:</h1>
+                <p>{{request.user.birthday}}</p>
+            </div>
+            <div class="info-group">
+                <h1>Website:</h1>
+                <p>www.philippersan.com</p>
+            </div>
+            <div class="info-group">
+                <h1>Degree:</h1>
+                <p>{{request.user.degree}}</p>
+            </div>
+            <div class="info-group">
+                <h1>Location:</h1>
+                <p>{{request.user.location}}</p>
+            </div>
+            <div class="info-group">
+                <h1>Age:</h1>
+                <p>26</p>
+            </div>
+            <div class="info-group">
+                <h1>Phone:</h1>
+                <p>{{request.user.phone}}</p>
+            </div>
+            <div class="info-group">
+                <h1>Freelance:</h1>
+                {% if request.user.freelance %}
+                <p>Availabel</p>
+                {% else %}
+                <p>Not Availabel</p>
+                {% endif %}
+            </div>
+            <div class="info-group">
+                <h1>Open To Work:</h1>
+                {% if request.user.open_to_work %}
+                <p>Availabel</p>
+                {% else %}
+                <p>Not Availabel</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="experience">
+            <h1 class="header">Last Job</h1>
+            <div class="last-job">
+                <div class="info-group">
+                    <h1>Company:</h1>
+                    <p>Creative NURV</p>
+                </div>
+                <div class="info-group">
+                    <h1>Role:</h1>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="info-group">
+                    <h1>Duration:</h1>
+                    <p>2 months</p>
+                </div>
+                <div class="info-group">
+                    <h1>Location:</h1>
+                    <p>Belo Horizonte - MG</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ex-edu">
+        <div class="education">
+            <h1>Education:</h1>
+            {% for education in educations %}
+            <ul class="list">
+                <h1>{{ education.school }}</h1>
+                <li>
+                    <p>Nível:</p> {{ education.education_level }}
+                </li>
+                <li>
+                    <p>Início:</p> {{ education.started_at }}
+                </li>
+                <li>
+                    <p>Termino:</p> {{ education.finished_at }}
+                </li>
+                <li>
+                    <p>Status:</p> {{ education.status }}
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+        <div class="past-experiences">
+            <h1>Experiences:</h1>
+            <ul class="list">
+                <h1>Apoio Pedagógico / Prefeitura de Betim</h1>
+                <li>
+                    <p>Duração:</p> 2015 - 2016
+                </li>
+            </ul>
+            <ul class="list">
+                <h1>Controlador de Acesso / Graber Sistemas de Segurança</h1>
+                <li>
+                    <p>Duração:</p> 2019 - 2021
+                </li>
+            </ul>
+            <ul class="list">
+                <h1>Auxiliar Administrativo / Graber Sistemas de Segurança</h1>
+                <li>
+                    <p>Duração:</p> 2021 - 2022
+                </li>
+            </ul>
+            <ul class="list">
+                <h1>Full Stack Developer / Creative NURV</h1>
+                <li>
+                    <p>Duração:</p> 2022 - Atual
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock conteudo %}

@@ -1,8 +1,8 @@
 {% load static %}
 <aside>
     <div class="title">
-        <h1>Philip Persan</h1>
-        <h2>Web Developer</h2>
+        <h1>{{request.user.first_name}} {{request.user.last_name}}</h1>
+        <h2>{{request.user.profession}}</h2>
     </div>
     <img id="perfil" src="{% static 'global/images/Persan.jpeg' %}" alt="profile">
     <div class="links">

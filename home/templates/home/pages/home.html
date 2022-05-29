@@ -3,7 +3,7 @@
 {% block title %}Home{% endblock title %}
 {% block conteudo %}
 <article>
-    <h1>Hellow My Name is Philip!</h1>
+    <h1>Hellow My Name is {{request.user.first_name}}!</h1>
     <p>
         I'm graduating in Comupter Science, in the begning of my carrer.
     </p>
