@@ -43,6 +43,18 @@
     main > #about > article > p {
         @apply text-EEE;
     }
+    main > #skills > article {
+        @apply prose lg:prose-lg p-5;
+    }
+    main > #skills > article > h1 {
+        @apply text-EEE underline decoration-orangeC;
+    }
+    main > #skills > article > h3 {
+        @apply text-EEE;
+    }
+    main > #skills > article > p {
+        @apply text-EEE;
+    }
     main > img {
         @apply w-2/5 rounded;
     }
@@ -57,6 +69,9 @@
     }
     .links {
         @apply flex flex-col items-start justify-center gap-5 text-EEE text-2xl;
+    }
+    .links > .links-group {
+        @apply flex items-center justify-center;
     }
     .links > .link-group > a {
         @apply hover:text-orangeC hover:underline hover:decoration-primary hidden sm:inline-block;
@@ -127,11 +142,56 @@
     .past-experiences > h1 {
         @apply font-bold text-EEE text-xl uppercase;
     }
+    #skills {
+        @apply w-full h-full p-3 flex flex-col gap-10 justify-start;
+    }
+    .languages {
+        @apply w-1/2 h-fit p-5 bg-secondary rounded;
+    }
+    .languages > h1 {
+        @apply font-bold text-EEE text-lg uppercase text-center;
+    }
+    .languages > .info-group > span {
+        @apply text-2xl text-orangeC;
+    }
+    .frameworks {
+        @apply w-1/2 h-fit p-5 bg-secondary rounded;
+    }
+    .frameworks > h1 {
+        @apply font-bold text-EEE text-lg uppercase text-center;
+    }
+    .frameworks > .info-group > span {
+        @apply text-2xl text-orangeC;
+    }
+    .soft-hard {
+        @apply flex gap-5;
+    }
+    .soft-skills {
+        @apply w-1/2 p-5 bg-secondary rounded flex flex-col items-start gap-3;
+    }
+    .soft-skills > h1 {
+        @apply font-bold text-EEE text-xl uppercase underline underline-offset-2 decoration-orangeC;
+    }
+    .hard-skills {
+        @apply w-1/2 p-5 bg-secondary rounded flex flex-col items-start gap-3;
+    }
+    .hard-skills > h1 {
+        @apply font-bold text-EEE text-xl uppercase underline underline-offset-2 decoration-orangeC;
+    }
+    .certificates {
+        @apply w-full p-5 bg-secondary rounded flex flex-col items-center justify-center;
+    }
+    .certificates > h1 {
+        @apply font-bold text-EEE text-xl text-center my-5 uppercase underline underline-offset-2 decoration-orangeC;
+    }
+    .certificates > .img-cert {
+        @apply w-full;
+    }
 }
 
 body {
     display: grid;
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: 22vw 78vw;
     width: 100vw;
     height: 100vh;
     font-family: 'Poppins', sans-serif;

@@ -3,6 +3,7 @@ module.exports = {
     "./frontend/**/*.{html,js}",
     "./frontend/index.html",
     "./frontend/about.html",
+    "./frontend/skills.html",
   ],
   theme: {
     extend: {
