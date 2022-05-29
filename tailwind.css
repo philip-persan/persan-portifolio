@@ -110,10 +110,10 @@
         @apply w-1/2 p-5 bg-secondary rounded flex flex-col items-start gap-3;
     }
     .education > h1 {
-        @apply font-bold text-EEE;
+        @apply font-bold text-EEE text-xl uppercase;
     }
     .list > h1 {
-        @apply font-semibold text-lg underline decoration-orangeC underline-offset-2;
+        @apply font-semibold text-EEE text-lg underline decoration-orangeC underline-offset-2;
     }
     .list > li {
         @apply flex gap-2 text-EEE;
@@ -122,10 +122,10 @@
         @apply text-orangeC;
     }
     .past-experiences {
-        @apply w-1/2 h-52 p-5 bg-secondary rounded;
+        @apply w-1/2 p-5 bg-secondary rounded flex flex-col items-start gap-3;
     }
     .past-experiences > h1 {
-        @apply font-bold text-EEE;
+        @apply font-bold text-EEE text-xl uppercase;
     }
 }
 

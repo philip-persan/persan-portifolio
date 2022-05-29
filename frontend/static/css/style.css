@@ -2792,7 +2792,10 @@ main > img{
 }
 
 .education > h1{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity));
 }
@@ -2801,6 +2804,8 @@ main > img{
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   -webkit-text-decoration-color: #D65A31;
@@ -2821,8 +2826,11 @@ main > img{
 }
 
 .past-experiences{
-  height: 13rem;
+  display: flex;
   width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(57 62 70 / var(--tw-bg-opacity));
@@ -2830,7 +2838,10 @@ main > img{
 }
 
 .past-experiences > h1{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity));
 }
