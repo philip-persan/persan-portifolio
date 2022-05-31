@@ -2579,6 +2579,649 @@ main > #skills > article > p{
   color: rgb(238 238 238 / var(--tw-text-opacity));
 }
 
+main > #contact > article{
+  color: var(--tw-prose-body);
+  max-width: 65ch;
+}
+
+main > #contact > article :where([class~="lead"]):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-lead);
+  font-size: 1.25em;
+  line-height: 1.6;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+main > #contact > article :where(a):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-links);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+main > #contact > article :where(strong):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-bold);
+  font-weight: 600;
+}
+
+main > #contact > article :where(ol):not(:where([class~="not-prose"] *)){
+  list-style-type: decimal;
+  padding-left: 1.625em;
+}
+
+main > #contact > article :where(ol[type="A"]):not(:where([class~="not-prose"] *)){
+  list-style-type: upper-alpha;
+}
+
+main > #contact > article :where(ol[type="a"]):not(:where([class~="not-prose"] *)){
+  list-style-type: lower-alpha;
+}
+
+main > #contact > article :where(ol[type="A" s]):not(:where([class~="not-prose"] *)){
+  list-style-type: upper-alpha;
+}
+
+main > #contact > article :where(ol[type="a" s]):not(:where([class~="not-prose"] *)){
+  list-style-type: lower-alpha;
+}
+
+main > #contact > article :where(ol[type="I"]):not(:where([class~="not-prose"] *)){
+  list-style-type: upper-roman;
+}
+
+main > #contact > article :where(ol[type="i"]):not(:where([class~="not-prose"] *)){
+  list-style-type: lower-roman;
+}
+
+main > #contact > article :where(ol[type="I" s]):not(:where([class~="not-prose"] *)){
+  list-style-type: upper-roman;
+}
+
+main > #contact > article :where(ol[type="i" s]):not(:where([class~="not-prose"] *)){
+  list-style-type: lower-roman;
+}
+
+main > #contact > article :where(ol[type="1"]):not(:where([class~="not-prose"] *)){
+  list-style-type: decimal;
+}
+
+main > #contact > article :where(ul):not(:where([class~="not-prose"] *)){
+  list-style-type: disc;
+  padding-left: 1.625em;
+}
+
+main > #contact > article :where(ol > li):not(:where([class~="not-prose"] *))::marker{
+  font-weight: 400;
+  color: var(--tw-prose-counters);
+}
+
+main > #contact > article :where(ul > li):not(:where([class~="not-prose"] *))::marker{
+  color: var(--tw-prose-bullets);
+}
+
+main > #contact > article :where(hr):not(:where([class~="not-prose"] *)){
+  border-color: var(--tw-prose-hr);
+  border-top-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+main > #contact > article :where(blockquote):not(:where([class~="not-prose"] *)){
+  font-weight: 500;
+  font-style: italic;
+  color: var(--tw-prose-quotes);
+  border-left-width: 0.25rem;
+  border-left-color: var(--tw-prose-quote-borders);
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+main > #contact > article :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before{
+  content: open-quote;
+}
+
+main > #contact > article :where(blockquote p:last-of-type):not(:where([class~="not-prose"] *))::after{
+  content: close-quote;
+}
+
+main > #contact > article :where(h1):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-headings);
+  font-weight: 800;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+main > #contact > article :where(h1 strong):not(:where([class~="not-prose"] *)){
+  font-weight: 900;
+}
+
+main > #contact > article :where(h2):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-headings);
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+main > #contact > article :where(h2 strong):not(:where([class~="not-prose"] *)){
+  font-weight: 800;
+}
+
+main > #contact > article :where(h3):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-headings);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+main > #contact > article :where(h3 strong):not(:where([class~="not-prose"] *)){
+  font-weight: 700;
+}
+
+main > #contact > article :where(h4):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-headings);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+main > #contact > article :where(h4 strong):not(:where([class~="not-prose"] *)){
+  font-weight: 700;
+}
+
+main > #contact > article :where(figure > *):not(:where([class~="not-prose"] *)){
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main > #contact > article :where(figcaption):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-captions);
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+}
+
+main > #contact > article :where(code):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-code);
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+main > #contact > article :where(code):not(:where([class~="not-prose"] *))::before{
+  content: "`";
+}
+
+main > #contact > article :where(code):not(:where([class~="not-prose"] *))::after{
+  content: "`";
+}
+
+main > #contact > article :where(a code):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-links);
+}
+
+main > #contact > article :where(pre):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-pre-code);
+  background-color: var(--tw-prose-pre-bg);
+  overflow-x: auto;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+  border-radius: 0.375rem;
+  padding-top: 0.8571429em;
+  padding-right: 1.1428571em;
+  padding-bottom: 0.8571429em;
+  padding-left: 1.1428571em;
+}
+
+main > #contact > article :where(pre code):not(:where([class~="not-prose"] *)){
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+main > #contact > article :where(pre code):not(:where([class~="not-prose"] *))::before{
+  content: none;
+}
+
+main > #contact > article :where(pre code):not(:where([class~="not-prose"] *))::after{
+  content: none;
+}
+
+main > #contact > article :where(table):not(:where([class~="not-prose"] *)){
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+}
+
+main > #contact > article :where(thead):not(:where([class~="not-prose"] *)){
+  border-bottom-width: 1px;
+  border-bottom-color: var(--tw-prose-th-borders);
+}
+
+main > #contact > article :where(thead th):not(:where([class~="not-prose"] *)){
+  color: var(--tw-prose-headings);
+  font-weight: 600;
+  vertical-align: bottom;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+main > #contact > article :where(tbody tr):not(:where([class~="not-prose"] *)){
+  border-bottom-width: 1px;
+  border-bottom-color: var(--tw-prose-td-borders);
+}
+
+main > #contact > article :where(tbody tr:last-child):not(:where([class~="not-prose"] *)){
+  border-bottom-width: 0;
+}
+
+main > #contact > article :where(tbody td):not(:where([class~="not-prose"] *)){
+  vertical-align: baseline;
+  padding-top: 0.5714286em;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+main > #contact > article{
+  --tw-prose-body: #374151;
+  --tw-prose-headings: #111827;
+  --tw-prose-lead: #4b5563;
+  --tw-prose-links: #111827;
+  --tw-prose-bold: #111827;
+  --tw-prose-counters: #6b7280;
+  --tw-prose-bullets: #d1d5db;
+  --tw-prose-hr: #e5e7eb;
+  --tw-prose-quotes: #111827;
+  --tw-prose-quote-borders: #e5e7eb;
+  --tw-prose-captions: #6b7280;
+  --tw-prose-code: #111827;
+  --tw-prose-pre-code: #e5e7eb;
+  --tw-prose-pre-bg: #1f2937;
+  --tw-prose-th-borders: #d1d5db;
+  --tw-prose-td-borders: #e5e7eb;
+  --tw-prose-invert-body: #d1d5db;
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-lead: #9ca3af;
+  --tw-prose-invert-links: #fff;
+  --tw-prose-invert-bold: #fff;
+  --tw-prose-invert-counters: #9ca3af;
+  --tw-prose-invert-bullets: #4b5563;
+  --tw-prose-invert-hr: #374151;
+  --tw-prose-invert-quotes: #f3f4f6;
+  --tw-prose-invert-quote-borders: #374151;
+  --tw-prose-invert-captions: #9ca3af;
+  --tw-prose-invert-code: #fff;
+  --tw-prose-invert-pre-code: #d1d5db;
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: #4b5563;
+  --tw-prose-invert-td-borders: #374151;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+main > #contact > article :where(p):not(:where([class~="not-prose"] *)){
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+main > #contact > article :where(img):not(:where([class~="not-prose"] *)){
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+main > #contact > article :where(video):not(:where([class~="not-prose"] *)){
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+main > #contact > article :where(figure):not(:where([class~="not-prose"] *)){
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+main > #contact > article :where(h2 code):not(:where([class~="not-prose"] *)){
+  font-size: 0.875em;
+}
+
+main > #contact > article :where(h3 code):not(:where([class~="not-prose"] *)){
+  font-size: 0.9em;
+}
+
+main > #contact > article :where(li):not(:where([class~="not-prose"] *)){
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+main > #contact > article :where(ol > li):not(:where([class~="not-prose"] *)){
+  padding-left: 0.375em;
+}
+
+main > #contact > article :where(ul > li):not(:where([class~="not-prose"] *)){
+  padding-left: 0.375em;
+}
+
+main > #contact > article > :where(ul > li p):not(:where([class~="not-prose"] *)){
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+main > #contact > article > :where(ul > li > *:first-child):not(:where([class~="not-prose"] *)){
+  margin-top: 1.25em;
+}
+
+main > #contact > article > :where(ul > li > *:last-child):not(:where([class~="not-prose"] *)){
+  margin-bottom: 1.25em;
+}
+
+main > #contact > article > :where(ol > li > *:first-child):not(:where([class~="not-prose"] *)){
+  margin-top: 1.25em;
+}
+
+main > #contact > article > :where(ol > li > *:last-child):not(:where([class~="not-prose"] *)){
+  margin-bottom: 1.25em;
+}
+
+main > #contact > article :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)){
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+main > #contact > article :where(hr + *):not(:where([class~="not-prose"] *)){
+  margin-top: 0;
+}
+
+main > #contact > article :where(h2 + *):not(:where([class~="not-prose"] *)){
+  margin-top: 0;
+}
+
+main > #contact > article :where(h3 + *):not(:where([class~="not-prose"] *)){
+  margin-top: 0;
+}
+
+main > #contact > article :where(h4 + *):not(:where([class~="not-prose"] *)){
+  margin-top: 0;
+}
+
+main > #contact > article :where(thead th:first-child):not(:where([class~="not-prose"] *)){
+  padding-left: 0;
+}
+
+main > #contact > article :where(thead th:last-child):not(:where([class~="not-prose"] *)){
+  padding-right: 0;
+}
+
+main > #contact > article :where(tbody td:first-child):not(:where([class~="not-prose"] *)){
+  padding-left: 0;
+}
+
+main > #contact > article :where(tbody td:last-child):not(:where([class~="not-prose"] *)){
+  padding-right: 0;
+}
+
+main > #contact > article > :where(:first-child):not(:where([class~="not-prose"] *)){
+  margin-top: 0;
+}
+
+main > #contact > article > :where(:last-child):not(:where([class~="not-prose"] *)){
+  margin-bottom: 0;
+}
+
+main > #contact > article{
+  padding: 1.25rem;
+}
+
+@media (min-width: 1024px){
+  main > #contact > article{
+    font-size: 1.125rem;
+    line-height: 1.7777778;
+  }
+
+  main > #contact > article :where(p):not(:where([class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+  }
+
+  main > #contact > article :where([class~="lead"]):not(:where([class~="not-prose"] *)){
+    font-size: 1.2222222em;
+    line-height: 1.4545455;
+    margin-top: 1.0909091em;
+    margin-bottom: 1.0909091em;
+  }
+
+  main > #contact > article :where(blockquote):not(:where([class~="not-prose"] *)){
+    margin-top: 1.6666667em;
+    margin-bottom: 1.6666667em;
+    padding-left: 1em;
+  }
+
+  main > #contact > article :where(h1):not(:where([class~="not-prose"] *)){
+    font-size: 2.6666667em;
+    margin-top: 0;
+    margin-bottom: 0.8333333em;
+    line-height: 1;
+  }
+
+  main > #contact > article :where(h2):not(:where([class~="not-prose"] *)){
+    font-size: 1.6666667em;
+    margin-top: 1.8666667em;
+    margin-bottom: 1.0666667em;
+    line-height: 1.3333333;
+  }
+
+  main > #contact > article :where(h3):not(:where([class~="not-prose"] *)){
+    font-size: 1.3333333em;
+    margin-top: 1.6666667em;
+    margin-bottom: 0.6666667em;
+    line-height: 1.5;
+  }
+
+  main > #contact > article :where(h4):not(:where([class~="not-prose"] *)){
+    margin-top: 1.7777778em;
+    margin-bottom: 0.4444444em;
+    line-height: 1.5555556;
+  }
+
+  main > #contact > article :where(img):not(:where([class~="not-prose"] *)){
+    margin-top: 1.7777778em;
+    margin-bottom: 1.7777778em;
+  }
+
+  main > #contact > article :where(video):not(:where([class~="not-prose"] *)){
+    margin-top: 1.7777778em;
+    margin-bottom: 1.7777778em;
+  }
+
+  main > #contact > article :where(figure):not(:where([class~="not-prose"] *)){
+    margin-top: 1.7777778em;
+    margin-bottom: 1.7777778em;
+  }
+
+  main > #contact > article :where(figure > *):not(:where([class~="not-prose"] *)){
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  main > #contact > article :where(figcaption):not(:where([class~="not-prose"] *)){
+    font-size: 0.8888889em;
+    line-height: 1.5;
+    margin-top: 1em;
+  }
+
+  main > #contact > article :where(code):not(:where([class~="not-prose"] *)){
+    font-size: 0.8888889em;
+  }
+
+  main > #contact > article :where(h2 code):not(:where([class~="not-prose"] *)){
+    font-size: 0.8666667em;
+  }
+
+  main > #contact > article :where(h3 code):not(:where([class~="not-prose"] *)){
+    font-size: 0.875em;
+  }
+
+  main > #contact > article :where(pre):not(:where([class~="not-prose"] *)){
+    font-size: 0.8888889em;
+    line-height: 1.75;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 0.375rem;
+    padding-top: 1em;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+  }
+
+  main > #contact > article :where(ol):not(:where([class~="not-prose"] *)){
+    padding-left: 1.5555556em;
+  }
+
+  main > #contact > article :where(ul):not(:where([class~="not-prose"] *)){
+    padding-left: 1.5555556em;
+  }
+
+  main > #contact > article :where(li):not(:where([class~="not-prose"] *)){
+    margin-top: 0.6666667em;
+    margin-bottom: 0.6666667em;
+  }
+
+  main > #contact > article :where(ol > li):not(:where([class~="not-prose"] *)){
+    padding-left: 0.4444444em;
+  }
+
+  main > #contact > article :where(ul > li):not(:where([class~="not-prose"] *)){
+    padding-left: 0.4444444em;
+  }
+
+  main > #contact > article > :where(ul > li p):not(:where([class~="not-prose"] *)){
+    margin-top: 0.8888889em;
+    margin-bottom: 0.8888889em;
+  }
+
+  main > #contact > article > :where(ul > li > *:first-child):not(:where([class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+  }
+
+  main > #contact > article > :where(ul > li > *:last-child):not(:where([class~="not-prose"] *)){
+    margin-bottom: 1.3333333em;
+  }
+
+  main > #contact > article > :where(ol > li > *:first-child):not(:where([class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+  }
+
+  main > #contact > article > :where(ol > li > *:last-child):not(:where([class~="not-prose"] *)){
+    margin-bottom: 1.3333333em;
+  }
+
+  main > #contact > article :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)){
+    margin-top: 0.8888889em;
+    margin-bottom: 0.8888889em;
+  }
+
+  main > #contact > article :where(hr):not(:where([class~="not-prose"] *)){
+    margin-top: 3.1111111em;
+    margin-bottom: 3.1111111em;
+  }
+
+  main > #contact > article :where(hr + *):not(:where([class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  main > #contact > article :where(h2 + *):not(:where([class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  main > #contact > article :where(h3 + *):not(:where([class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  main > #contact > article :where(h4 + *):not(:where([class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  main > #contact > article :where(table):not(:where([class~="not-prose"] *)){
+    font-size: 0.8888889em;
+    line-height: 1.5;
+  }
+
+  main > #contact > article :where(thead th):not(:where([class~="not-prose"] *)){
+    padding-right: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  main > #contact > article :where(thead th:first-child):not(:where([class~="not-prose"] *)){
+    padding-left: 0;
+  }
+
+  main > #contact > article :where(thead th:last-child):not(:where([class~="not-prose"] *)){
+    padding-right: 0;
+  }
+
+  main > #contact > article :where(tbody td):not(:where([class~="not-prose"] *)){
+    padding-top: 0.75em;
+    padding-right: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  main > #contact > article :where(tbody td:first-child):not(:where([class~="not-prose"] *)){
+    padding-left: 0;
+  }
+
+  main > #contact > article :where(tbody td:last-child):not(:where([class~="not-prose"] *)){
+    padding-right: 0;
+  }
+
+  main > #contact > article > :where(:first-child):not(:where([class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  main > #contact > article > :where(:last-child):not(:where([class~="not-prose"] *)){
+    margin-bottom: 0;
+  }
+}
+
+main > #contact > article > h1{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #D65A31;
+          text-decoration-color: #D65A31;
+}
+
+main > #contact > article > h3{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+main > #contact > article > p{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
 main > img{
   width: 40%;
   border-radius: 0.25rem;
@@ -3616,6 +4259,59 @@ main > img{
   -webkit-text-decoration-color: #D65A31;
           text-decoration-color: #D65A31;
   text-underline-offset: 2px;
+}
+
+#contact{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding: 0.75rem;
+}
+
+#contact > .contact-forms{
+  width: 20rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 62 70 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+}
+
+#contact > .contact-forms > .main-form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#contact > .contact-forms > .main-form > .form-group{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact > .contact-forms > .main-form > .form-group > label{
+  display: block;
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+#contact > .contact-forms > .main-form > .form-group > input{
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+#contact > .contact-forms > .main-form > .form-group > textarea{
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.static{
+  position: static;
+}
+
+.block{
+  display: block;
 }
 
 .font-semibold{

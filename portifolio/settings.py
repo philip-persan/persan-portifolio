@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'education',
     'jobs',
     'skills',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -136,6 +137,13 @@ STATICFILES_DIRS = [
 STATIC_ROOT = 'static'
 
 AUTH_USER_MODEL = "users.Owner"
+
+# * Email Settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'YOUR EMAIL'
+EMAIL_HOST_PASSWORD = 'YOUT PASSWORD'
+EMAIL_USE_TSL = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

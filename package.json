@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i tailwind.css -o ./frontend/static/css/style.css --watch"
+    "dev": "npx tailwindcss -i tailwind.css -o ./frontend/static/css/style.css --watch",
+    "django": "npx tailwindcss -i tailwind.css -o ./base_static/global/css/style.css --watch"
   },
   "repository": {
     "type": "git",
