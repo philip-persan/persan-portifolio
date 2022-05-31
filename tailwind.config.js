@@ -4,6 +4,7 @@ module.exports = {
     "./frontend/index.html",
     "./frontend/about.html",
     "./frontend/skills.html",
+    "./about/templates/about/pages/*.html",
   ],
   theme: {
     extend: {

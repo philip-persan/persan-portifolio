@@ -1,3 +1,5 @@
+import datetime
+
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -26,3 +28,9 @@ class Owner(AbstractUser):
         auto_created=False,
         null=True
     )
+
+    @property
+    def age(self):
+        if(self.birthday is not None):
+            age = datetime.date.today().year - self.birthday.year
+            return age

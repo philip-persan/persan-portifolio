@@ -1,18 +1,18 @@
 {% load static %}
 <aside>
     <div class="title">
-        <h1>{{request.user.first_name}} {{request.user.last_name}}</h1>
-        <h2>{{request.user.profession}}</h2>
+        <h1>{{user.first_name}} {{user.last_name}}</h1>
+        <h2>{{user.profession}}</h2>
     </div>
     <img id="perfil" src="{% static 'global/images/Persan.jpeg' %}" alt="profile">
     <div class="links">
         <div class="link-group">
             <i class="bi bi-house-fill"></i>
-            <a href="#home">Home</a>
+            <a href="{% url 'home:index' %}">Home</a>
         </div>
         <div class="link-group">
             <i class="bi bi-person-fill"></i>
-            <a href="#about">About</a>
+            <a href="{% url 'about:index' %}">About</a>
         </div>
         <div class="link-group">
             <i class="bi bi-cpu-fill"></i>

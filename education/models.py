@@ -40,6 +40,6 @@ class Education(models.Model):
         blank=False,
         null=True
     )
-    
+
     def __str__(self):
         return self.school

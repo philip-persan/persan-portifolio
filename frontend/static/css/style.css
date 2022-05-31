@@ -3618,6 +3618,19 @@ main > img{
   text-underline-offset: 2px;
 }
 
+#check{
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
+}
+
+.static{
+  position: static;
+}
+
+.block{
+  display: block;
+}
+
 .font-semibold{
   font-weight: 600;
 }

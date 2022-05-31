@@ -5,7 +5,7 @@
 <section id="about">
     <article class="prose prose-xl">
         <h1 class="">About Me</h1>
-        <h3>I'm {{request.user.first_name}} {{request.user.last_name}} and {{request.user.profession}}</h3>
+        <h3>I'm {{user.first_name}} {{user.last_name}} and {{user.profession}}</h3>
         <p>
             Here you gonna learn more about me!
         </p>
@@ -14,7 +14,7 @@
         <div class="info">
             <div class="info-group">
                 <h1 class="font-semibold">Birthday:</h1>
-                <p>{{request.user.birthday}}</p>
+                <p>{{user.birthday}}</p>
             </div>
             <div class="info-group">
                 <h1>Website:</h1>
@@ -22,23 +22,23 @@
             </div>
             <div class="info-group">
                 <h1>Degree:</h1>
-                <p>{{request.user.degree}}</p>
+                <p>{{user.degree}}</p>
             </div>
             <div class="info-group">
                 <h1>Location:</h1>
-                <p>{{request.user.location}}</p>
+                <p>{{user.location}}</p>
             </div>
             <div class="info-group">
                 <h1>Age:</h1>
-                <p>26</p>
+                <p>{{user.age}}</p>
             </div>
             <div class="info-group">
                 <h1>Phone:</h1>
-                <p>{{request.user.phone}}</p>
+                <p>{{user.phone}}</p>
             </div>
             <div class="info-group">
                 <h1>Freelance:</h1>
-                {% if request.user.freelance %}
+                {% if user.freelance %}
                 <p>Availabel</p>
                 {% else %}
                 <p>Not Availabel</p>
@@ -46,7 +46,7 @@
             </div>
             <div class="info-group">
                 <h1>Open To Work:</h1>
-                {% if request.user.open_to_work %}
+                {% if user.open_to_work %}
                 <p>Availabel</p>
                 {% else %}
                 <p>Not Availabel</p>
@@ -58,19 +58,23 @@
             <div class="last-job">
                 <div class="info-group">
                     <h1>Company:</h1>
-                    <p>Creative NURV</p>
+                    <p>{{last_job.enterprise}}</p>
                 </div>
                 <div class="info-group">
-                    <h1>Role:</h1>
-                    <p>Full Stack Developer</p>
+                    <h1>Position:</h1>
+                    <p>{{last_job.position}}</p>
                 </div>
                 <div class="info-group">
-                    <h1>Duration:</h1>
-                    <p>2 months</p>
+                    <h1>Started at:</h1>
+                    <p>{{last_job.started_at}}</p>
                 </div>
                 <div class="info-group">
-                    <h1>Location:</h1>
-                    <p>Belo Horizonte - MG</p>
+                    <h1>Status:</h1>
+                    {% if last_job.is_on %}
+                    <p>Working</p>
+                    {% else %}
+                    <p>Not Working</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -98,30 +102,14 @@
         </div>
         <div class="past-experiences">
             <h1>Experiences:</h1>
+            {% for job in jobs %}
             <ul class="list">
-                <h1>Apoio Pedagógico / Prefeitura de Betim</h1>
+                <h1>{{ job.position }} / {{ job.enterprise }}</h1>
                 <li>
-                    <p>Duração:</p> 2015 - 2016
+                    <p>Duration:</p> {{job.started_at.year}} - {% if job.finished_at.year is not None %} {{job.finished_at.year}} {% else %} Working {% endif %} 
                 </li>
             </ul>
-            <ul class="list">
-                <h1>Controlador de Acesso / Graber Sistemas de Segurança</h1>
-                <li>
-                    <p>Duração:</p> 2019 - 2021
-                </li>
-            </ul>
-            <ul class="list">
-                <h1>Auxiliar Administrativo / Graber Sistemas de Segurança</h1>
-                <li>
-                    <p>Duração:</p> 2021 - 2022
-                </li>
-            </ul>
-            <ul class="list">
-                <h1>Full Stack Developer / Creative NURV</h1>
-                <li>
-                    <p>Duração:</p> 2022 - Atual
-                </li>
-            </ul>
+            {% endfor %}
         </div>
     </div>
 </section>
