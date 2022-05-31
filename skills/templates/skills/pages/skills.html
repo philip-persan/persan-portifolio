@@ -1,0 +1,72 @@
+{% extends 'global/base.html' %}
+{% load static %}
+{% block title %}Skills{% endblock title %}
+{% block conteudo %}
+<section id="skills">
+    <article class="prose prose-xl">
+        <h1 class="">My Skills</h1>
+        <h3>Programing Languages & Frameworks</h3>
+        <p>
+            Here you gonna see my Programing Languages!
+        </p>
+    </article>
+    <div class="card-info">
+        <div class="languages">
+            <h1>Languages</h1>
+            <div class="info-group">
+                <span><i class='bx bxl-python'></i></span>
+                <p>Python</p>
+            </div>
+            <div class="info-group">
+                <span><i class='bx bxl-nodejs'></i></span>
+                <p>Javascript</p>
+            </div>
+            <div class="info-group">
+                <span><i class='bx bxl-html5'></i></span>
+                <p>HTML 5</p>
+            </div>
+            <div class="info-group">
+                <span><i class='bx bxl-css3'></i></span>
+                <p>CSS 3</p>
+            </div>
+        </div>
+        <div class="frameworks">
+            <h1>Framework's</h1>
+            <div class="info-group">
+                <span><i class='bx bxl-django'></i></span>
+                <p>Django</p>
+            </div>
+            <div class="info-group">
+                <span><i class='bx bxl-react'></i></span>
+                <p>ReactJS</p>
+            </div>
+            <div class="info-group">
+                <span><i class='bx bxl-tailwind-css'></i></span>
+                <p>Tailwind</p>
+            </div>
+            <div class="info-group">
+                <span><i class='bx bxl-bootstrap'></i></span>
+                <p>Bootstrap</p>
+            </div>
+        </div>
+    </div>
+    <div class="soft-hard">
+        <div class="soft-skills">
+            <h1>Soft Skills:</h1>
+            <ul class="list">
+                {% for item in soft %}
+                <li>- {{ item.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="hard-skills">
+            <h1>Hard Skills:</h1>
+            <ul class="list">
+                {% for item in hard %}
+                <li>- {{ item.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock conteudo %}
