@@ -5,7 +5,11 @@ module.exports = {
     "./frontend/about.html",
     "./frontend/skills.html",
     "./frontend/contact.html",
-    "./about/templates/about/pages/*.html",
+    "./frontend/work.html",
+    "./about/templates/about/pages/about.html",
+    "./about/templates/contact/pages/contact.html",
+    "./about/templates/skills/pages/skills.html",
+    "./about/templates/work/pages/portifolio.html",
   ],
   theme: {
     extend: {

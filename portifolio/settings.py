@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'education',
     'jobs',
     'skills',
+    'work',
     'contact',
 ]
 
